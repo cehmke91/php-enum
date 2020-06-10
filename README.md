@@ -2,6 +2,9 @@
 
 Provides a simple to use interface to create enums in PHP which allows both static comparisons and instanced interactions.
 
+## Installation
+    composer require cehmke/php-enum
+
 ## How to use
 
 Create a new class extending cehmke91/enum and declare some constants.
