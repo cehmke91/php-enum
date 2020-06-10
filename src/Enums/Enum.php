@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Enums;
+namespace Cehmke\Enums;
 
-use Exception;
+use Cehmke\Enums\Exceptions\UndefinedEnumElementException;
 use ReflectionClass;
 
 class Enum
@@ -12,7 +12,7 @@ class Enum
     public function __construct(string $value)
     {
         if (! self::contains($value)) {
-            throw new Exception('an enum instance must have a value set');
+            throw new UndefinedEnumElementException();
         }
 
         $this->value = $value;

@@ -1,0 +1,23 @@
+{
+    "name": "cehmke/php-enum",
+    "description": "Simple enum interface allowing both static comparison and instanced interactions",
+    "keywords": ["enum", "value", "model"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Caius Ehmke",
+            "email": "caius@ehmke.nl"
+        }
+    ],
+
+    "require": {
+        "php": ">=7.2"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Cehmke\\Enums\\": "src/Enums"
+        }
+    }
+}

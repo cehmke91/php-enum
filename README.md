@@ -9,7 +9,7 @@ That's it.
 
     <?php
 
-    use cehmke91/Enum;
+    use Cehmke/Enum;
 
     class Colour extends Enum
     {
@@ -18,7 +18,11 @@ That's it.
         public const GREEN = 'green';
     }
 
-The underlying enum class uses reflection to pull the declared values and use them in a more traditional enum context.
+The underlying enum class uses reflection to pull the declared constants and use them in a more traditional enum context. so you can easily create a new instance of the enum as follows:
+
+    $colour = new Colour(Colour::RED);
+
+This will create a new instance of the enum holding the value of red.
 
 ---
 
