@@ -7,7 +7,7 @@ Provides a simple to use interface to create enums in PHP which allows both stat
 
 ## Usage
 
-Create a new class extending cehmke91/enum and declare some constants.
+Create a new class extending cehmke/enum and declare some constants.
 That's it.
 
     <?php
